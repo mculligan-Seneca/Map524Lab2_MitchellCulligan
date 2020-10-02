@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        >
+        <TextView
+
+            android:text="@string/program_header"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="50sp"/>
+        <Spinner
+            android:id="@+id/type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dropDownWidth="wrap_content"
+           />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:src="@drawable/film"/>
+
+
+    </LinearLayout>
+
+
+
+<LinearLayout
+    android:id="@+id/second_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/first_layout"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    >
+        <TextView
+            android:id="@+id/movieText_Id"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movieText"
+            android:textColor="@color/Black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginStart="30dp"
+
+            />
+        
+        <RadioGroup
+            android:id="@+id/movieGroupId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="@android:dimen/thumbnail_width"
+            >
+            <RadioButton
+                android:id="@+id/avengersMovie_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/avengers_movie"
+                android:textSize="25sp"
+
+                />
+            <RadioButton
+                android:id="@+id/spiritedAway_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spirited_away"
+                android:textSize="25sp"
+
+                />
+            <RadioButton
+                android:id="@+id/darkKnight_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dark_knight"
+                android:textSize="25sp"
+                />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/snackText_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/snackText"
+            android:textColor="@color/Black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            />
+
+    <LinearLayout
+        android:id="@+id/snackCheckId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="@android:dimen/thumbnail_width"
+        >
+        
+        <CheckBox
+        android:id="@+id/popcorn_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popcorn"
+        android:textSize="25sp"
+
+        />
+        <CheckBox
+            android:id="@+id/coke_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coke"
+            android:textSize="25sp"
+
+            />
+        <CheckBox
+            android:id="@+id/gum_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gummies"
+            android:textSize="25sp"
+
+            />
+
+
+        
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_layout"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+<LinearLayout
+    android:id="@+id/switch_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/movie_3d"
+    android:textSize="25sp"
+    android:layout_marginStart="30dp"
+    android:textStyle="bold"
+    android:textColor="@color/Black"
+    />
+
+        <Switch
+            android:id="@+id/threeD_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:checked="false"
+            />
+        </LinearLayout>
+        <Button
+            android:id="@+id/purchase_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/purchase_btn"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

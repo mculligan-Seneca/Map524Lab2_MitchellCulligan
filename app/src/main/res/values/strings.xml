@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Ticket App (Lab 2)</string>
+    <string name="movieText">Pick A Movie:</string>
+    <string name="snackText">Choose some Snacks:</string>
+    <string name="program_header">Mitchell</string>
+    <string name="avengers_movie">Avengers</string>
+    <string name="spirited_away">Spirited Away</string>
+    <string name="dark_knight">The Dark Knight</string>
+    <string name="popcorn">Popcorn</string>
+    <string name="coke">Coke</string>
+    <string name="gummies">Gummies</string>
+    <string name="movie_3d">View movie in 3D?: </string>
+    <string name="purchase_btn">purchase</string>
+    <string name="error_message">Invalid ticket purchase</string>
+    <string name="success_message">Ticket Successfully purchased! Thank You!</string>
+
+
+</resources>
